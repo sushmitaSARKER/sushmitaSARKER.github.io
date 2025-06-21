@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience - Sushmita Sarker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; }
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: #f0f2f5; 
+            color: #1f2937; 
+            transition: background-color 0.3s, color 0.3s;
+        }
+        /* --- Dark Mode Styles --- */
+        body.dark { 
+            background-color: #111827; 
+            color: #f9fafb; 
+        }
+        body.dark .bg-white { background-color: #1f2937; }
+        body.dark .bg-gray-100 { background-color: #111827; }
+        body.dark .text-gray-500 { color: #9ca3af; }
+        body.dark .text-gray-600 { color: #d1d5db; }
+        body.dark .text-gray-700 { color: #e5e7eb; }
+        body.dark .timeline-line { border-color: #4b5563; }
+        body.dark .timeline-dot { border-color: #4b5563; background-color: #111827; }
+
+        /* --- Navigation Styles --- */
+        .glass-effect { 
+            background: rgba(255, 255, 255, 0.5); 
+            backdrop-filter: blur(10px); 
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+        body.dark .glass-effect { 
+            background: rgba(17, 24, 39, 0.5); 
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .nav-link.active {
+            color: #0ea5e9; /* sky-500 */
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-50 glass-effect">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold">Sushmita Sarker</a>
+            <ul class="flex items-center space-x-6">
+                <li><a href="index.html#about" class="nav-link hover:text-sky-500 transition-colors">About</a></li>
+                <li><a href="index.html#skills" class="nav-link hover:text-sky-500 transition-colors">Skills</a></li>
+                <li><a href="experience.html" class="nav-link hover:text-sky-500 transition-colors">Experience</a></li>
+                <li><a href="projects.html" class="nav-link hover:text-sky-500 transition-colors">Projects</a></li>
+                <li><a href="publications.html" class="nav-link hover:text-sky-500 transition-colors">Publications</a></li>
+                <li><a href="resume.html" class="nav-link hover:text-sky-500 transition-colors">Resume</a></li>
+                <li><a href="contact.html" class="nav-link hover:text-sky-500 transition-colors">Contact</a></li>
+                <li>
+                    <button id="theme-toggle" class="p-2 rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500">
+                        <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+                        <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" /></svg>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-32 pb-24">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <h1 class="text-4xl font-bold text-center mb-20">Experience & Achievements</h1>
+
+            <!-- Leadership Section -->
+            <section class="mb-20">
+                <div class="flex flex-col md:flex-row items-start gap-12">
+                    <div class="md:w-1/3 w-full">
+                        <img src="https://placehold.co/600x450/3498db/ffffff?text=Leadership" alt="Leadership activities" class="rounded-lg shadow-xl w-full">
+                    </div>
+                    <div class="md:w-2/3 w-full">
+                        <h2 class="text-3xl font-semibold mb-6">Activities & Leadership</h2>
+                        <div class="relative pl-8">
+                            <div class="timeline-line absolute left-3 top-2 h-full border-l-2 border-gray-300"></div>
+                            <div class="relative">
+                                <!-- <div class="timeline-dot absolute -left-1.5 top-1.5 w-5 h-5 bg-white border-4 border-gray-300 rounded-full"></div> -->
+                                <p class="text-sm text-gray-500 font-medium">Aug. 2024 – Aug. 2025</p>
+                                <h3 class="text-xl font-bold mt-1">Campus Lead - Google Developer Group</h3>
+                                <p class="text-md text-gray-600 font-medium mb-2">University of Nevada, Reno | Reno, NV</p>
+                                <ul class="list-disc pl-5 space-y-1 text-gray-700">
+                                    <li>Organized high-impact events and workshops to foster a collaborative technical community on campus.</li>
+                                    <li>Led a team in developing innovative projects using Google technologies.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Professional Experience Section -->
+            <section class="mb-20">
+                 <div class="flex flex-col md:flex-row-reverse items-start gap-12">
+                    <div class="md:w-1/3 w-full">
+                        <img src="https://placehold.co/600x700/e67e22/ffffff?text=Pro+Experience" alt="Professional Experience" class="rounded-lg shadow-xl w-full">
+                    </div>
+                    <div class="md:w-2/3 w-full">
+                        <h2 class="text-3xl font-semibold mb-6">Professional Experience</h2>
+                        <div class="relative pl-8">
+                            <div class="timeline-line absolute left-3 top-2 h-full border-l-2 border-gray-300"></div>
+                            <div class="relative mb-8">
+                                <!-- <div class="timeline-dot absolute -left-1.5 top-1.5 w-5 h-5 bg-white border-4 border-gray-300 rounded-full"></div> -->
+                                <p class="text-sm text-gray-500 font-medium">May 2025 – Aug. 2025</p>
+                                <h3 class="text-xl font-bold mt-1">AI/ML R&D Summer Intern</h3>
+                                <p class="text-md text-gray-600 font-medium mb-2">Idaho National Lab | Idaho Falls, ID</p>
+                                <ul class="list-disc pl-5 space-y-1 text-gray-700">
+                                    <li>Developing advanced neural architectures for open-set recognition to identify known and unseen wireless signals.</li>
+                                </ul>
+                            </div>
+                            <div class="relative">
+                                <!-- <div class="timeline-dot absolute -left-1.5 top-1.5 w-5 h-5 bg-white border-4 border-gray-300 rounded-full"></div> -->
+                                <p class="text-sm text-gray-500 font-medium">June 2016 – Aug. 2016</p>
+                                <h3 class="text-xl font-bold mt-1">Network Engineer Intern</h3>
+                                <p class="text-md text-gray-600 font-medium mb-2">Teletalk BD Ltd | Dhaka, Bangladesh</p>
+                                <ul class="list-disc pl-5 space-y-1 text-gray-700">
+                                   <li>Optimized and maintained 3G network infrastructure across core and radio access networks.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Research Experience Section -->
+            <section class="mb-20">
+                <div class="flex flex-col md:flex-row items-start gap-12">
+                    <div class="md:w-1/3 w-full">
+                        <img src="https://placehold.co/600x450/2ecc71/ffffff?text=Research" alt="Research Experience" class="rounded-lg shadow-xl w-full">
+                    </div>
+                    <div class="md:w-2/3 w-full">
+                        <h2 class="text-3xl font-semibold mb-6">Research Experience</h2>
+                        <div class="relative pl-8">
+                            <div class="timeline-line absolute left-3 top-2 h-full border-l-2 border-gray-300"></div>
+                            <div class="relative">
+                                <!-- <div class="timeline-dot absolute -left-1.5 top-1.5 w-5 h-5 bg-white border-4 border-gray-300 rounded-full"></div> -->
+                                <p class="text-sm text-gray-500 font-medium">Aug. 2021 – Present</p>
+                                <h3 class="text-xl font-bold mt-1">Graduate Research Assistant</h3>
+                                <p class="text-md text-gray-600 font-medium mb-2">University of Nevada, Reno | Reno, NV</p>
+                                <ul class="list-disc pl-5 space-y-1 text-gray-700">
+                                    <li>Conducted research on CNNs, transformers, and generative models to improve invasive mass detection in mammograms.</li>
+                                    <li>Engineered end-to-end workflows for large-scale 3D photogrammetry using SfM and Multi-View Stereo.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Teaching Experience Section -->
+            <section class="mb-20">
+                <div class="flex flex-col md:flex-row-reverse items-start gap-12">
+                    <div class="md:w-1/3 w-full">
+                         <img src="https://placehold.co/600x700/9b59b6/ffffff?text=Teaching" alt="Teaching Experience" class="rounded-lg shadow-xl w-full">
+                    </div>
+                    <div class="md:w-2/3 w-full">
+                         <h2 class="text-3xl font-semibold mb-6">Teaching Experience</h2>
+                         <div class="relative pl-8">
+                            <div class="timeline-line absolute left-3 top-2 h-full border-l-2 border-gray-300"></div>
+                            <div class="relative pl- mb-8">
+                                <!-- <div class="timeline-dot absolute -left-1.5 top-1.5 w-5 h-5 bg-white border-4 border-gray-300 rounded-full"></div> -->
+                                <p class="text-sm text-gray-500 font-medium">Aug. 2023 – Dec. 2023</p>
+                                <h3 class="text-xl font-bold mt-1">Instructor - GRAD 778: Elements of Research Computing</h3>
+                                <p class="text-md text-gray-600 font-medium mb-2">University of Nevada, Reno | Reno, NV</p>
+                            </div>
+                             <div class="relative pl- mb-8">
+                                <!-- <div class="timeline-dot absolute -left-1.5 top-1.5 w-5 h-5 bg-white border-4 border-gray-300 rounded-full"></div> -->
+                                <p class="text-sm text-gray-500 font-medium">Aug. 2021 – Dec. 2022</p>
+                                <h3 class="text-xl font-bold mt-1">Graduate Teaching Assistant - ENGR100</h3>
+                                <p class="text-md text-gray-600 font-medium mb-2">University of Nevada, Reno | Reno, NV</p>
+                            </div>
+                            <div class="relative pl-">
+                                <!-- <div class="timeline-dot absolute -left-1.5 top-1.5 w-5 h-5 bg-white border-4 border-gray-300 rounded-full"></div> -->
+                                <p class="text-sm text-gray-500 font-medium">Dec. 2017 – June 2021</p>
+                                <h3 class="text-xl font-bold mt-1">Lecturer/Asst. Teacher - Cambridge IGCSE A Level Physics</h3>
+                                <p class="text-md text-gray-600 font-medium mb-2">South Point School & College | Dhaka, Bangladesh</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-white">
+        <div class="container mx-auto px-6 text-center text-gray-600">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="https://github.com/sushmitaSARKER" aria-label="GitHub" class="hover:text-sky-500"><svg class="w-8 h-8" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+                <a href="https://www.linkedin.com/in/sushmitasarker/" aria-label="Linkedin" class="hover:text-sky-500"><svg class="w-8 h-8" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                <a href="https://scholar.google.com/citations?user=Jdh7V1AAAAAJ&hl=en" aria-label="Google Scholar" class="hover:text-sky-500"><svg class="w-8 h-8" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5z"/></svg></a>
+            </div>
+            <p>&copy; 2024 Sushmita Sarker. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const sunIcon = document.getElementById('sun-icon');
+        const moonIcon = document.getElementById('moon-icon');
+        const applyTheme = (theme) => {
+            if (theme === 'dark') {
+                document.body.classList.add('dark');
+                sunIcon.classList.add('hidden');
+                moonIcon.classList.remove('hidden');
+            } else {
+                document.body.classList.remove('dark');
+                sunIcon.classList.remove('hidden');
+                moonIcon.classList.add('hidden');
+            }
+        };
+        themeToggleBtn.addEventListener('click', () => {
+            const isDark = document.body.classList.contains('dark');
+            const newTheme = isDark ? 'light' : 'dark';
+            localStorage.setItem('theme', newTheme);
+            applyTheme(newTheme);
+        });
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            applyTheme(savedTheme);
+            const navLinks = document.querySelectorAll('a.nav-link');
+            const currentPath = window.location.pathname.split('/').pop();
+            navLinks.forEach(link => {
+                if (link.getAttribute('href').startsWith(currentPath)) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
