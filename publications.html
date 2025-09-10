@@ -153,26 +153,27 @@
             applyTheme(isDark ? 'light' : 'dark');
         });
         
-        // --- ACTIVE NAV LINK SCRIPT ---
-        document.addEventListener('DOMContentLoaded', () => {
-            // Apply theme on initial load
-            const savedTheme = localStorage.getItem('theme') || 'light';
-            applyTheme(savedTheme);
+        // // --- ACTIVE NAV LINK SCRIPT ---
+        // document.addEventListener('DOMContentLoaded', () => {
+        //     // Apply theme on initial load
+        //     const savedTheme = localStorage.getItem('theme') || 'light';
+        //     applyTheme(savedTheme);
 
-            const navLinks = document.querySelectorAll('.nav-link');
-            const currentPath = window.location.pathname.split('/').pop();
+        //     const navLinks = document.querySelectorAll('.nav-link');
+        //     const currentPath = window.location.pathname.split('/').pop();
 
-            // Handle active state for simple pages
-            if (currentPath === 'projects.html') {
-                 navLinks.forEach(link => {
-                    if(link.getAttribute('href') === 'projects.html') {
-                        link.classList.add('active');
-                    }
-                });
-            }
-        });
+        //     // Handle active state for simple pages
+        //     if (currentPath === 'projects.html') {
+        //          navLinks.forEach(link => {
+        //             if(link.getAttribute('href') === 'projects.html') {
+        //                 link.classList.add('active');
+        //             }
+        //         });
+        //     }
+        // });
     </script>
 
 </body>
 </html>
+
 
