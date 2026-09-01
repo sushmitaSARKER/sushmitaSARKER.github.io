@@ -31,6 +31,12 @@
             border-bottom: 1px solid rgba(255, 255, 255, 0.2);
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
         }
+        .about-overlay { 
+            background-color: rgba(255, 255, 255, 0.88); 
+        }
+        body.dark .about-overlay { 
+            background-color: rgba(31, 41, 55, 0.90); 
+        }
         body.dark .glass-effect { 
             background: rgba(17, 24, 39, 0.5); 
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -101,7 +107,20 @@
         </section> -->
 
         <!-- About Me Section -->
-        <section id="about" class="py-20 bg-white">
+        <section id="about" class="relative py-20 bg-white">
+            <div class="absolute inset-0 bg-cover bg-center bg-fixed" style="background-image: url('https://i.imgur.com/e30TEQv.jpeg');"></div>
+            <div class="absolute inset-0 about-overlay"></div>
+            <div class="relative container mx-auto px-6 max-w-4xl">
+                <h2 class="text-4xl font-bold text-center mb-12">About Me</h2>
+                <div class="text-lg text-gray-700 space-y-4 text-justify">
+                    <p>I am a NASA Postdoctoral Program Fellow in the Earth Science Division at NASA Ames Research Center, where I develop AI-assisted retrieval methods for spaceborne lidar and satellite observations, with a focus on aerosol characterization from CALIPSO.</p>
+                    <p>My work sits at the intersection of generative modeling and scientific imaging. During my doctoral research I built diffusion and consistency models for high-fidelity image synthesis and transformer-based architectures for medical image analysis. I now bring that same toolkit to atmospheric remote sensing, where noisy signals and scarce labels raise many of the same questions.</p>
+                    <p>Before Ames I completed my PhD and MS in Computer Science and Engineering at the University of Nevada, Reno, and spent a summer with the computational data science group at Idaho National Laboratory working on open-set recognition for time-frequency signals.</p>
+                    <p>When I am not coding, you can find me outdoors, reading, exercising, or experimenting with new recipes in the kitchen.</p>
+                </div>
+            </div>
+        </section>
+        <!-- <section id="about" class="py-20 bg-white">
             <div class="container mx-auto px-6 max-w-4xl">
                 <h2 class="text-4xl font-bold text-center mb-12">About Me</h2>
                 <div class="text-lg text-gray-700 space-y-4 text-justify">
@@ -109,13 +128,13 @@
                     <p>My work sits at the intersection of generative modeling and scientific imaging and I am passionate about building scalable and impactful AI solutions that drive innovation. During my doctoral research I built diffusion and consistency models for high-fidelity image synthesis and transformer-based architectures for medical image analysis. I now bring that same toolkit to atmospheric remote sensing, where noisy signals and scarce labels raise many of the same questions.</p>
                     <p>Before Ames I completed my PhD and MS in Computer Science and Engineering at the University of Nevada, Reno, and spent a summer with the computational data science group at Idaho National Laboratory working on open-set recognition for time-frequency signals.</p>
                     <p>When I am not coding, you can find me outdoors, reading, exercising, or experimenting with new recipes in the kitchen.</p>
-                </div>
+                </div> -->
                     <!-- <p>Hello! I'm a Ph.D. Candidate in Computer Science & Graduate Research Assistant specializing in AI and Deep Learning. I am currently contributing to cutting-edge projects at Idaho National Laboratory and the University of Nevada, Reno.</p>
                     <p>I specialize in bridging the gap between theoretical research and practical application, with a core focus on computer vision and generative AI. I am passionate about building scalable and impactful AI solutions that drive innovation.</p>
                     <p>When I'm not coding, you can find me exploring the outdoors, reading a good book, exercising or experimenting with new recipes in the kitchen.</p>
                 </div> -->
-            </div>
-        </section>
+            <!-- </div>
+        </section> -->
 
         <!-- Education Section -->
         <section id="education" class="py-20">
