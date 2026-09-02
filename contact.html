@@ -75,9 +75,9 @@
                  <p class="text-lg text-gray-600 dark:text-gray-400 mb-8">
                      I'm always open to new opportunities and collaboration. If you have a question or just want to say hi, my inbox is always open.
                  </p>
-                 <a href="mailto:13.s.sarker@gmail.com" class="inline-block bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-8 rounded-full text-lg transition-transform transform hover:scale-105">
-                     Say Hello
-                 </a>
+                 <a href="#" id="email-link" class="inline-block bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-8 rounded-full text-lg transition-transform transform hover:scale-105">
+                    Say Hello
+                </a>
             </div>
         </section>
     </main>
@@ -98,6 +98,13 @@
         const themeToggleBtn = document.getElementById('theme-toggle');
         const sunIcon = document.getElementById('sun-icon');
         const moonIcon = document.getElementById('moon-icon');
+
+        const emailLink = document.getElementById('email-link');
+            if (emailLink) {
+                const user = ['13', 's', 'sarker'].join('.');
+                const domain = ['gmail', 'com'].join('.');
+                emailLink.href = 'mailto:' + user + '@' + domain;
+            }
 
         const applyTheme = (theme) => {
             if (theme === 'dark') {
